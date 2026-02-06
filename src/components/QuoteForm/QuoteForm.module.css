@@ -1,0 +1,28 @@
+.formWrapper {
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Estilos específicos por marca usando selectores de atributo */
+.formWrapper[data-brand="brandA"] {
+  background-color: #f0f4ff;
+  border-left: 10px solid #2563eb; /* Azul */
+}
+
+.formWrapper[data-brand="brandB"] {
+  background-color: #fffaf0;
+  border-left: 10px solid #db2777; /* Rosa/Fucsia */
+}
+
+.title {
+  color: #333;
+}
+
+.formWrapper[data-brand="brandA"] .title {
+  font-family: 'Inter', sans-serif;
+}
+
+.formWrapper[data-brand="brandB"] .title {
+  font-family: 'Playfair Display', serif;
+}

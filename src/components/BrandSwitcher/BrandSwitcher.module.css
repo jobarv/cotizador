@@ -1,0 +1,54 @@
+/* BrandSwitcher.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f1f5f9; /* Un gris muy claro neutro */
+    border-radius: 50px; /* Forma de píldora */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.buttonGroup {
+    display: flex;
+    background: #e2e8f0;
+    padding: 4px;
+    border-radius: 40px;
+    gap: 4px;
+}
+
+.brandBtn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #64748b;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Esta clase se aplicará dinámicamente en el JSX */
+.activeBtn {
+    background-color: var(--primary-color); /* Cambia según la marca */
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.brandBtn:hover:not(.activeBtn) {
+    background-color: rgba(0, 0, 0, 0.05);
+}

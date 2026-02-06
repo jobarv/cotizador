@@ -1,0 +1,19 @@
+/* src/index.css */
+:root {
+  /* Marca A - Default */
+  --primary: #3b82f6;
+  --bg-app: #ffffff;
+  --logo-url: url('/logo-a.png');
+}
+
+[data-theme='marcaB'] {
+  /* Marca B - Sobreescritura */
+  --primary: #10b981;
+  --bg-app: #f9f9f9;
+  --logo-url: url('/logo-b.png');
+}
+
+body {
+  background-color: var(--bg-app);
+  transition: all 0.3s ease; /* Para que el cambio de marca sea suave */
+}

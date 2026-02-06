@@ -1,0 +1,27 @@
+/* Valores por defecto (Marca A) */
+.app-container.marcaA {
+  --primary-color: #3b82f6;
+  --bg-body: #f0f4f8;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+/* Sobreescritura para Marca B */
+.app-container.marcaB {
+  --primary-color: #10b981;
+  --bg-body: #f5fcf9;
+  --font-main: 'Georgia', serif;
+}
+
+/* Uso de las variables */
+body {
+  background-color: var(--bg-body);
+  font-family: var(--font-main);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
