@@ -8,13 +8,13 @@ const BrandSwitcher = ({ currentBrand, setBrand }) => {
                     className={currentBrand === 'brandA' ? styles.active : ''}
                     onClick={() => setBrand('brandA')}
                 >
-                    Emprendimiento A
+                    MOTIONTECH
                 </button>
                 <button
                     className={currentBrand === 'brandB' ? styles.active : ''}
                     onClick={() => setBrand('brandB')}
                 >
-                    Emprendimiento B
+                    BARRAS DESIGNS
                 </button>
             </div>
         </>
